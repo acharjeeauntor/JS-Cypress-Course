@@ -24,13 +24,3 @@
 // myfun = val => val*10
 // console.log(myfun(5))
 
-/////// Class:
-
-class Classname{
-    constructor(){
-
-    }
-}
-
-
-var myObj = new Classname("name",22)
