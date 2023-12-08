@@ -1,0 +1,11 @@
+{
+  "name": "js-cypress-course",
+  "version": "2.0.0",
+  "description": "\"This is desc\"",
+  "main": "Class-1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Auntor",
+  "license": "ISC"
+}
