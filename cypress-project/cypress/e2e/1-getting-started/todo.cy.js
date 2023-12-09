@@ -1,5 +1,4 @@
 /// <reference types="cypress" />
-
 // Welcome to Cypress!
 //
 // This spec file contains a variety of sample tests
@@ -25,7 +24,6 @@ describe('example to-do app', () => {
     // Then, we use `should` to assert that there are two matched items,
     // which are the two default items.
     cy.get('.todo-list li').should('have.length', 2)
-
     // We can go even further and check that the default todos each contain
     // the correct text. We use the `first` and `last` functions
     // to get just the first and last matched elements individually,
