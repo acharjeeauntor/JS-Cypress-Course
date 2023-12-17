@@ -1,0 +1,24 @@
+{
+    "test_data": [
+        {
+            "email": "incurrent@gmail.com",
+            "password": "123456"
+        },
+        {
+            "email": "current@gmail.com",
+            "password": "1234incorrect"
+        },
+        {
+            "email": "",
+            "password": "123456"
+        },
+        {
+            "email": "current@gmail.com",
+            "password": ""
+        }
+    ],
+    "correct_info":{
+        "email": "current@gmail.com",
+        "password": "123456"
+    }
+}
