@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "specific-spec": "npx cypress run --spec cypress/e2e/practice/button.cy.js --browser=firefox --headless",
+    "all-spec": "npx cypress run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.6.1"
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "cypress": "^12.14.0",
+    "mochawesome": "^7.1.3"
   }
 }

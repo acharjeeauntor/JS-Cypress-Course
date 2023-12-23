@@ -1,0 +1,85 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-23T02:55:07.094Z",
+    "end": "2023-12-23T02:55:11.110Z",
+    "duration": 4016,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "99126cf3-c27a-4476-80bd-096565b228bc",
+      "title": "",
+      "fullFile": "cypress/e2e/practice/button.cy.js",
+      "file": "cypress/e2e/practice/button.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Basic Commands for CY",
+          "fullTitle": "Basic Commands for CY",
+          "timedOut": null,
+          "duration": 2458,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "Cypress.on('uncaught:exception', (err, runnable) => {\n  return false;\n});\ncy.visit(\"https://letcode.in/buttons\");\n// cy.get('#color').should('have.css', 'background-color', 'rgb(138, 77, 118)')\ncy.get('#color').click({\n  force: true\n});\ncy.get('#color').dblclick();\ncy.get('#color').rightclick();",
+          "err": {},
+          "uuid": "e981f333-2c21-4176-9280-55cda99f5007",
+          "parentUUID": "99126cf3-c27a-4476-80bd-096565b228bc",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "e981f333-2c21-4176-9280-55cda99f5007"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 2458,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/test-reports",
+        "overwrite": false,
+        "html": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
