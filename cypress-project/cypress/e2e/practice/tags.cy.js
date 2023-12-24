@@ -3,7 +3,7 @@
 /// <reference types="cypress" />
 
 
-it('selects apple 1', () => {
+it(`selects apple 1 { tags: 'smoke' }`, () => {
     cy.visit("https://letcode.in/dropdowns")
     cy.get('#fruits').select('Apple')
     //cy.get('#fruits').should('have.value',0)
@@ -11,7 +11,7 @@ it('selects apple 1', () => {
 })
 
 it('selects apple 2', () => {
-    //tag: smoke
+  
     cy.visit("https://letcode.in/dropdowns")
     cy.get('#fruits').select(['1', '2']) // Value
     //cy.get('#fruits').select(2) // Index
@@ -27,9 +27,9 @@ it('selects Multi selct 3', () => {
 })
 
 
-it('Test Confirm Alert box 4', () => {
+it('Test Confirm Alert box 4 @smoke', () => {
 
-    //tag: smoke
+
 
     cy.visit("https://webdriveruniversity.com/Popup-Alerts/")
     cy.get("#button4").click()
