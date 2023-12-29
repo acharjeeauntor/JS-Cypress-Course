@@ -1,8 +1,8 @@
 const ENV = process.env.ENV //prod || test
-if (!ENV || ![`prod`,`test`].includes(ENV)) {
-  console.log(`ENV is missing or incorrect.Please provide a correct environment value like "ENV=prod|test npm run smoke-test"`);
-  process.exit();
-} 
+// if (!ENV || ![`prod`,`test`].includes(ENV)) {
+//   console.log(`ENV is missing or incorrect.Please provide a correct environment value like "ENV=prod|test npm run smoke-test"`);
+//   process.exit();
+// } 
 
 require('dotenv').config({path:`.env.${ENV}`,override:true})
 

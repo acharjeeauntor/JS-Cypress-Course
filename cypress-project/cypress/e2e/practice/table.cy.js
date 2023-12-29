@@ -1,11 +1,13 @@
 /// <reference types="cypress" />
 
-// it(`Basic Commands for Table automation`,()=>{
-//     cy.visit("https://letcode.in/table")
-//     const tableRows = cy.get('#simpletable tbody tr').then((el)=>{
-//         var l = el.length
-//         cy.location(l)
-//     })
-//     // for()
-//     })
-    
+it(`Table test`, () => {
+    cy.visit("https://letcode.in/table")
+    cy.get('#simpletable  tbody tr').each(($row)=>{
+        cy.wrap($row).find('td').eq(1).invoke('text').then((text)=>{
+            cy.log(text)
+            if(text == "Raj"){
+                cy.wrap($row).find('input').click()
+            }
+        })
+    })
+})
